@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TX2_2</string>
+
+    <string name="menu_add">Thêm</string>
+    <string name="menu_save">Lưu trữ</string>
+
+    <string-array name="forum_array">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Reddit</item>
+        <item>TikTok</item>
+        <item>Pinterest</item>
+    </string-array>
+</resources>

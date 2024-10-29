@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <Spinner
+            android:id="@+id/spinnerForum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lời nhắn"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <TextView
+        android:id="@+id/textViewRegistrationCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lần đăng ký: 0"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5px">
+        <CheckBox
+            android:id="@+id/checkBoxGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lướt web" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem kết quả" />
+</LinearLayout>
